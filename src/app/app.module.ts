@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { DbzModule } from './dbz/dbz.module';
-import { FormComponent } from './dbz/components/form/form.component';
 
 @NgModule({
   declarations: [

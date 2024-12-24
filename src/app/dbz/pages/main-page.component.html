@@ -1,21 +1,31 @@
-<h1>Hola Mundo</h1>
 
+<h1>Hola Mundo</h1>
 
 <hr>
 
 <div class="row">
 
-    <div class="col">
+  <div class="col">
+    <list-component [charactersList]="characters"
+                    (onDelete)="onDeleteCharacter($event)"></list-component>
+  </div>
 
-      <app-dbz-list [characterList]="characters" ></app-dbz-list>
-
-    </div>
-
-    <div class="col">
-
-      <app-dbz-form (onNewCharacter)="onNewCharacter($event)"></app-dbz-form>
-
-    </div>
-
+  <div class="col">
+    <form-component (onNewCharacter)="onNewCharacter($event)"></form-component>
+  </div>
 
 </div>
+
+<link rel="stylesheet" href="/src/styles.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" />
+
+
+
+
+
+<!-- 1. Mostrar una lista -->
+
+<!-- <ul class="list-group">
+  <li class="list-group-item">{{ characters[0].name }} - Power {{ characters[0].power }}</li>
+  <li class="list-group-item">{{ characters[1].name }} - Power {{ characters[1].power }}</li>
+</ul> -->

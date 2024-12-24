@@ -3,3 +3,49 @@ body
 {
   margin: 30px;
 }
+
+
+.small {
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 10px;
+  font-weight: 600;
+}
+.profile-circle-icon {
+  width: 16px;
+  position: relative;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.icon {
+  align-self: stretch;
+  width: 30px;
+  border-radius: 0px 6px 6px 0px;
+  background-color: #f9f9f9;
+  border: 1px solid #e1e3ea;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+.labelicon-placementright-s {
+  width: 100%;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #e1e3ea;
+  box-sizing: border-box;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px 0px 10px;
+  text-align: left;
+  font-size: 10px;
+  color: #7e8299;
+  font-family: Inter;
+}
+
